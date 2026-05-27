@@ -2,3 +2,4 @@ Django==5.2.9
 psycopg2-binary==2.9.11
 django-crispy-forms==2.5
 crispy-bootstrap4==6.0
+python-decouple==3.8

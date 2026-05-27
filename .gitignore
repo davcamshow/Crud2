@@ -1,0 +1,52 @@
+# ---------- Variables de entorno ----------
+.env
+.env.local
+.env.production
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ---------- Entorno virtual ----------
+EntVirt/
+venv/
+env/
+.venv/
+
+# ---------- Django ----------
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+mediafiles/
+media/
+*.log
+
+# ---------- IDE / Editor ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- Coverage / Testing ----------
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml

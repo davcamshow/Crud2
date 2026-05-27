@@ -21,7 +21,10 @@
                     Usuario: {{ user.username }} 
                     {% if user.is_superuser %}(Admin){% elif user.is_staff %}(Gerente){% else %}(Cliente){% endif %}
                 </span>
-                <a href="{% url 'logout' %}" class="btn btn-outline-light btn-sm">Cerrar Sesión</a>
+                <form method="post" action="{% url 'logout' %}" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-light btn-sm">Cerrar Sesión</button>
+                </form>
             </div>
         </div>
     </nav>

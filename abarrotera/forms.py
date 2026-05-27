@@ -17,8 +17,10 @@ class ProductoForm(forms.ModelForm):
 
 class RegistroForm(UserCreationForm):
     email = forms.EmailField(required=True, widget=forms.EmailInput(attrs={'class': 'form-control'}))
+    # SEGURIDAD: No incluir 'admin' aquí. Los administradores se crean
+    # desde el panel de admin o con 'python manage.py createsuperuser'.
     rol = forms.ChoiceField(
-        choices=[('admin', 'Administrador'), ('gerente', 'Gerente'), ('cliente', 'Cliente')],
+        choices=[('gerente', 'Gerente'), ('cliente', 'Cliente')],
         widget=forms.Select(attrs={'class': 'form-control'})
     )
     

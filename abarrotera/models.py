@@ -25,5 +25,5 @@ class Producto(models.Model):
         verbose_name_plural = 'Productos'
         ordering = ['-fecha_creacion']
 
-        def __str__(self):
-            return self.nombre
+    def __str__(self):
+        return self.nombre
