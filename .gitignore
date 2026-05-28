@@ -50,3 +50,6 @@ htmlcov/
 .pytest_cache/
 nosetests.xml
 coverage.xml
+
+# Claude
+.claude/
