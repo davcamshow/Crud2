@@ -54,7 +54,7 @@ SELECT
     a.accion,
     a.stock_anterior,
     a.stock_nuevo,
-    a.fecha_movimiento,
+    a.fecha_movimiento
 FROM abarrotera_auditoriainventario a
 JOIN abarrotera_producto p ON a.producto_id = p.id
 ORDER BY a.fecha_movimiento DESC;
